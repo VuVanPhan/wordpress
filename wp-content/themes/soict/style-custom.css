@@ -1,0 +1,596 @@
+/*
+Theme Name: soict
+Description: The #1 selling theme of all time that allows you to build virtually any design style.
+Author: ThemeFusion
+Theme URI:
+Author URI:
+Version: 3.8.8
+License: Themeforest Split Licence
+License URI: -
+Text Domain: soict
+-----------------------------------------------------------------------------*/
+
+/*--------Header CSS--------*/
+.header-sidebar {
+    /*background-color: #253c65;*/
+    background-color: #1d3256;
+    color: #fff;
+    z-index: 99999;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap {
+    background-color: inherit;
+    padding-left: 30px;
+    padding-right: 30px;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row .header-sidebar-col-left{
+    float: left;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row .header-sidebar-col-right{
+    float: right;
+    position: relative;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row .header-sidebar-col-right .site-name {
+    float: left;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row .header-sidebar-col-right .site-name h1{
+    height: 148px;
+    /* float: left; */
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 34px;
+}
+.fusion-header-wrapper.header-sidebar .header-sidebar-wrap .fusion-row .header-sidebar-col-right h1{
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}
+/*disable menu logo when not scroll down*/
+.fusion-header-wrapper .fusion-logo {
+    display: none;
+}
+/*display menu logo when scroll down*/
+.fusion-header-wrapper.fusion-is-sticky .fusion-logo {
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 0px;
+}
+.soict-header-right{
+    width: 220px;
+    height: 100px;
+    float: left;
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.header-sidebar .header-sidebar-col-right .bbp-submit-wrapper {
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+.soict-header-right .bbp-login-form{
+    display: none;
+}
+.soict-header-right button.button{
+    width: 81px;
+}
+.soict-header-right .bbp-submit-wrapper{
+    margin-top: 23px;
+}
+.soict-header-right .bbp-logged-in{
+    float: right;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    background-color: #1b2942;
+    box-shadow: 1px 2px 10px 1px #000;
+}
+.soict-header-right .bbp-logged-in a {
+    color: #fff;
+}
+.soict-header-right .bbp-logged-in a.logout-link {
+    color: #bababa;
+}
+.header-bottom-sidebar{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.header-bottom-sidebar form.bbp-login-form {
+    display: none;
+    float: right;
+    background-color: #1d3256;
+    padding: 15px 20px;
+    box-shadow: 1px 3px 10px 1px #000;
+    position: absolute;
+    z-index: 999;
+    right: 0px;
+    top: 2px;
+    width: 300px;
+}
+.header-bottom-sidebar form.bbp-login-form .bbp-lostpass-link{
+    color: #8a8585;
+}
+/*--------End Header--------*/
+
+/*--------Content CSS--------*/
+#main.clearfix {
+    background-color: #eef5f5;
+    min-height: 550px;
+    padding: 0px;
+}
+#main.clearfix #content .page {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding: 55px 10px 45px;
+    margin: 20px 10px 0px;
+    background: #fff;
+    clear: both;
+}
+.soict, .list-wrap, .soict-page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#content .message {
+    margin-top: 10px;
+}
+.tablenav-pages {
+    float: right;
+    height: 28px;
+    margin-top: 3px;
+    cursor: default;
+    color: #555;
+}
+.tablenav-pages label {
+    cursor: pointer;
+    color: #4c4c4c;
+}
+.tablenav-pages input{
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow: initial;
+    background-color: #fff;
+    color: #4c4c4c!important;
+    outline: 0;
+    -webkit-transition: 50ms border-color ease-in-out;
+    transition: 50ms border-color ease-in-out;
+    width: 32px!important;
+    height: 26px!important;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    line-height: 24px;
+    text-align: center;
+}
+.tablenav-pages a:hover {
+    border-color: #5b9dd9;
+    color: #fff;
+    background: #00a0d2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+.tablenav-pages-navspan {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 3px 5px 7px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    min-width: 26px;
+    height: 26px;
+    background: #f7f7f7;
+    color: #a0a5aa;
+    text-decoration: none;
+}
+.soict-table {
+    float: left;
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+    margin-top: 12px;
+    background-color: #fff;
+}
+.soict.student.myinternships .soict-table {
+    float: none;
+    margin: 20px auto 10px;
+}
+.soict.student.myinternships .tablenav-pages {
+    float: none;
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.soict-table * {
+    word-wrap: break-word;
+}
+.soict-table thead th{
+    color: #4c4c4c;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.soict-table thead {
+    background-color: #f3f3f3;
+}
+.soict-table thead tr  {
+    height: 28px;
+    border-bottom: 1px solid #c2c3e2;
+}
+.soict-table tr  {
+    height: 32px;
+}
+.soict-table tr th, .soict-table tr td {
+    padding: 0px 5px;
+}
+.soict-table tbody > :nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.row-header h3{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-align: center;
+    color: #5d5c5c;
+}
+.fade-text {
+    color: #afafaf;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+}
+.registered {
+    color: #afafaf;
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    padding: 6px 7px;
+    margin: 2px 6px;
+    display: block;
+    text-align: center;
+}
+.soict-table a {
+    color: #0018ce;
+}
+.soict-table a:hover {
+    color: #80c702;
+    text-decoration: none;
+}
+a.button-link {
+    border: 1px solid #d4cfcf;
+    color: #807878;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 13px;
+    padding: 6px 7px;
+    background-color: #a3ff00;
+    margin: 2px 6px;
+    display: block;
+    text-align: center;
+}
+a.button-link:hover {
+    color: #fff;
+    background-color: #80c702;
+}
+.internship-register .form-wrap{
+    text-align: center;
+}
+.internship-register .form-inner {
+    display: inline-block;
+    text-align: left;
+}
+.internship-register .form-inner > label {
+    float: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.internship-register .form-inner > input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    color: #000;
+}
+.internship-register .form-inner > input {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    color: #000;
+}
+.button-submit{
+    text-align: center;
+    float: right;
+    clear: left;
+    padding: 10px 13px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #6799f3;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.button-submit:hover {
+    background-color: #2f7aff;
+    color: #fff;
+}
+.soict .button-submit.student{
+    float: initial;
+}
+.registration-notice-1 {
+    display: block;
+    line-height: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0px 0px 0 0px;
+    background-color: #fff;
+    border-left: 4px solid #ff3d00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    color: #ff3d00;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.registration-notice-2 {
+    display: block;
+    line-height: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0px 0px 0 0px;
+    background-color: #fff;
+    border-left: 4px solid #ffba00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    color: #ffba00;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.registration-notice-3 {
+    display: block;
+    line-height: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0px 0px 0 0px;
+    background-color: #fff;
+    border-left: 4px solid #0ace00;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-sizing: border-box;
+    color: #067700;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.soict .form-wrap {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #fff;
+    border: 1px solid #cccece;
+}
+.soict .person-info {
+    display: inline-block;
+    min-width: 570px;
+    color: #424242;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+.soict .person-info.name {
+    text-align: left;
+    padding: 10px 30px;
+}
+.soict .person-info.company {
+    font-size: 14px;
+    text-align: left;
+}
+.soict .person-info.company .person-row {
+    margin: 5px 0px;
+}
+.soict .person-info.company .left-col {
+    min-width: 80px;
+    display: inline-block;
+}
+.soict .person-info.company .right-col {
+    color: #131313;
+    display: inline-block;
+}
+.soict .person-info.company .right-col.company-name {
+    font-weight: bold;
+
+}
+.soict .person-info.company .right-col.company-review {
+    padding: 10px 10px;
+    float: left;
+    clear: both;
+    width: 100%;
+    border: 1px #D8D8D8;
+    border-style: dotted;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.soict .person-info a {
+    color: #ff8300;
+    text-decoration: underline;
+}
+.soict .person-info > img {
+    width: 120px;
+    max-height: 120px;
+    margin: 20px 20px;
+}
+.soict .person-info.name .value {
+    margin-left: 10px;
+    font-weight: 600;
+}
+.soict .form-inner {
+    display: inline-block;
+    width: 570px;
+    color: #5d5d5d;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.34) 1px 1px 8px 2px;
+}
+.soict .form-inner .input-row {
+    min-height: 20px;
+    text-align: left;
+    float: left;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 0px;
+}
+.soict .form-inner .input-row.submit-row {
+    display: inline-block;
+    text-align: center;
+}
+.soict .form-inner .input-row label {
+    min-width: 158px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    color: #7b7b7b;
+    font-weight: 500;
+    font-family: sans-serif;
+    line-height: 33px;
+    height: 33px;
+}
+.soict .form-inner .input-row .value {
+    display: block;
+    float: left;
+    min-width: 200px;
+}
+.soict .form-inner .input-row .value-right {
+    display: block;
+    float: left;
+    min-width: 200px;
+    font-size: 13px;
+    /*height: 33px;*/
+    line-height: 33px;
+}
+.soict .form-inner .input-row input.text {
+    display: block;
+    float: left;
+    min-width: 50px;
+    width: 120px;
+    color: #3e3e3e;
+    height: 33px;
+}
+.soict .form-inner .input-row textarea {
+    margin: 0px;
+    width: 510px;
+    height: 150px;
+    color: #3e3e3e;
+    font-size: 14px;
+    padding: 7px 10px;
+}
+.soict .form-inner a.button {
+    color: #fff;
+    font-size: 16px;
+    background-color: #6799f3;
+    display: block;
+    width: 60px;
+    height: 24px;
+    line-height: 24px;
+    padding: 4px 8px;
+    text-align: center;
+}
+.soict .form-inner a.button:hover {
+    background-color: #2f7aff;
+    color: #fff;
+}
+.soict a.download {
+    color: #ff8300;
+    text-decoration: underline;
+    width: 50px;
+    background-color: #fff;
+    float: left;
+    line-height: 21px;
+    height: 21px;
+    margin: 0px;
+    margin-top: 7px;
+    margin-right: 10px;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid #d4cfcf;
+}
+.soict a.highlight {
+    padding: 5px 8px;
+}
+.soict a.highlight:hover {
+    background-color: #ff8300;
+    color: #fff;
+}
+.soict a.download:hover {
+    color: #fff;
+    background-color: #ff8300;
+    border: 1px solid #ff8300;
+}
+.soict.student-edit .person-info.photo {
+    text-align: left;
+}
+.soict.student-edit .person-info.photo > img {
+    margin: 10px 0px;
+    display: inline-block;
+}
+.soict.student-edit .person-info.photo > h3 {
+    margin: 10px 0px;
+    display: inline-block;
+    margin-left: 22px;
+}
+.soict.student-edit form input, .soict.student-edit form select, .soict.student-edit form textarea {
+    color: #2d2d2d;
+}
+.soict.student-edit .form-inner .input-row label {
+    color: #5d5b5b;
+    min-width: 82px;
+    margin-right: 5px;
+}
+.student.internship.list-wrap .table-wrap .soict-table {
+    float: initial;
+    margin: 0 auto;
+}
+.student.internship.list-wrap .table-wrap .tablenav-pages {
+    margin: 0 auto;
+    margin-top: 10px;
+    float: initial;
+    text-align: center;
+}
+.soict-table img.company-logo {
+    width: 60px;
+    margin: 5px;
+}
+.soict.student.myinternships .row-footer.no-internship > h3{
+    text-align: center;
+    font-weight: 400;
+}
+/*--------End Content--------*/
+
+/*--------Footer CSS--------*/
+.fusion-footer-widget-area {
+    background-color: #253c65;
+}
+/*--------End Footer--------*/

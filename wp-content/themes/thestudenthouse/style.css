@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/*
+Theme Name: TheStudentHouse - Academy Child
+Theme URI: http://thestudenthouse.org
+Description: Learning Management WordPress Theme.
+Author: Michael
+Author URI: http://thestudenthouse.org
+Version: 0.1
+Template: academy
+*/
+@import url("../academy/style.css");
+
+.span-required{
+    color: #ff0000;
+}
+
+.sidebar{
+    padding-top: 10px;
+}
+
+/*.completed{*/
+    /*background: url("images/completed.png") !important;*/
+/*}*/
+
+ul.styled-list.style-3 li.completed::before {
+    background: #fff url("images/completed.png") no-repeat scroll center 0;
+}
+/*ul.styled-list.style-3 li::before .completed{*/
+    /*background: url("images/completed.png") !important;*/
+/*}*/
+
+.course-preview .course-image img {
+    display: block;
+    height: 248px;
+    width: 100%;
+}
+
+.button-facebook-login{
+    background-color: #3f5e9e;
+    float: left;
+    /*margin-left: 12px;*/
+    line-height: 1.8em;
+    padding: 0.2em 10px 0.3em 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.button-facebook-login .button-icon{
+    top: -2px;
+    margin: 0 -2px;
+}
+
+.share-button {
+    margin-left: 0px;
+}
+
+/*Harry sua */
+
+
+
+.site-header{
+	background-image: url('http://soict.thestudenthouse.org/student/wp-content/uploads/2015/12/Untitled-1111.png');	
+	background-repeat: no-repeat;
+    width: 100%;
+    background-position: center top;
+    background-color: #253c65;
+}
+
+
+
+.site-footer{
+	background-color: #253c65;
+}
+
+.form-group.required>label:after {
+    content:"*";
+    color:red;
+}
+
+.error {
+    color: red;
+}
+/* end */

@@ -1,0 +1,6 @@
+<?php
+
+require_once('admin/thestudenthouse_menu.php');
+add_action('init', function () {
+    Menu_Admin::get_instance();
+});

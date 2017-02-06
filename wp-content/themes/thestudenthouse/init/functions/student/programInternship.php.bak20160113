@@ -1,0 +1,162 @@
+<?php
+/**
+ * Program Internship
+ *
+ * Handles companies data
+ *
+ * @class ProgramIntenrship
+ * @author Michael
+ */
+ 
+class ProgramIntenrship extends Student {
+    /**
+     * get all companies that join program by program id
+     */
+    public function getAllCompanyInProgram($program_id){
+        global $wpdb;
+        $company_internship_program_table = COMPANY_PREFIX.'internship_program_joined';
+        $getCompanyIdsSql = "SELECT company_id, status, number_student, number_student_received FROM ".$company_internship_program_table." WHERE (".$company_internship_program_table.".program_id = ".$program_id.") AND (".$company_internship_program_table.".status = 1)";
+        $result = $wpdb->get_results($getCompanyIdsSql, 'ARRAY_A');
+        return $result;
+    }
+
+    /**
+     * get value company from id and meta key
+     */
+
+    public function getValueCompany($company_id,$meta_key){
+        global $wpdb;
+        $company_usermeta = COMPANY_PREFIX."usermeta";
+        $sql = "SELECT meta_value FROM ".$company_usermeta." WHERE ".$company_usermeta.".user_id = \"".$company_id."\" AND ".$company_usermeta.".meta_key = \"".$meta_key."\"";
+        $result = $wpdb->get_results($sql, 'ARRAY_A');
+        $value = '';
+        foreach ($result as $r)
+            $value = $r['meta_value'];
+        return $value;
+    }
+
+    /**
+     * join to company
+     */
+    public function joinCompany($data){
+        $student_id = $data['student_id'];
+        $company_id = $data['company_id'];
+        $program_id = $data['program_id'];
+        $student_code = $data['student_code'];
+        if($student_id && $company_id && $program_id){
+            global $wpdb;
+            $company_internship_student_program_table = COMPANY_PREFIX . "internship_student_program";
+            $wpdb->insert(
+                $company_internship_student_program_table,
+                array(
+                    'company_id' => $company_id,
+                    'student_id' => $student_id,
+                    'student_code' => $student_code,
+                    'program_id' => $program_id,
+                    'created_at' => date('Y-m-d')
+                )
+            );
+
+            $company_internship_program_table = COMPANY_PREFIX.'internship_program_joined';
+            $numberStudentReceived = 0;
+            $numberStudentReceivedSql = "SELECT number_student_received FROM ".$company_internship_program_table." WHERE (".$company_internship_program_table.".program_id = ".$program_id.") AND (".$company_internship_program_table.".company_id = ".$company_id.")";
+            $result = $wpdb->get_results($numberStudentReceivedSql, 'ARRAY_A');
+            foreach($result as $r)
+                $numberStudentReceived = $r['number_student_received'];
+
+            $wpdb->update(
+                $company_internship_program_table,
+                array('number_student_received' => $numberStudentReceived + 1),
+                array(
+                    'company_id' => $company_id,
+                    'program_id' => $program_id
+                    )
+            );
+        }
+    }
+
+    /**
+     * cancel joining to company
+     */
+    public function cancelJoinCompany($data){
+        $student_id = $data['student_id'];
+        $company_id = $data['company_id'];
+        $program_id = $data['program_id'];
+        $student_code = $data['student_code'];
+        if($student_code && $company_id && $program_id){
+            global $wpdb;
+            $company_internship_student_program_table = COMPANY_PREFIX . "internship_student_program";
+            $wpdb->delete(
+                $company_internship_student_program_table,
+                array(
+                    'company_id' => $company_id,
+//                    'student_id' => $student_id,
+                    'student_code' => $student_code,
+                    'program_id' => $program_id,
+                    'created_at' => date('Y-m-d')
+                )
+            );
+
+            $company_internship_program_table = COMPANY_PREFIX.'internship_program_joined';
+            $numberStudentReceived = 0;
+            $numberStudentReceivedSql = "SELECT number_student_received FROM ".$company_internship_program_table." WHERE (".$company_internship_program_table.".program_id = ".$program_id.") AND (".$company_internship_program_table.".company_id = ".$company_id.")";
+            $result = $wpdb->get_results($numberStudentReceivedSql, 'ARRAY_A');
+            foreach($result as $r)
+                $numberStudentReceived = $r['number_student_received'];
+
+            $wpdb->update(
+                $company_internship_program_table,
+                array('number_student_received' => $numberStudentReceived - 1),
+                array(
+                    'company_id' => $company_id,
+                    'program_id' => $program_id
+                )
+            );
+        }
+    }
+
+    /**
+     * get Company that student joined
+     */
+
+    public function getCompanyStudentJoined($program_id){
+        $student_id = get_current_user_id();
+        global $wpdb;
+        $company_internship_student_program_table = COMPANY_PREFIX."internship_student_program";
+        $sql = "SELECT company_id, program_id FROM ".$company_internship_student_program_table." WHERE ".$company_internship_student_program_table.".student_id = \"".$student_id."\" AND ".$company_internship_student_program_table.".program_id = \"".$program_id."\"";
+        $result = $wpdb->get_results($sql, 'ARRAY_A');
+        foreach($result as $r)
+            return $r;
+    }
+
+    /**
+     * get review for student
+     */
+    public function getReviewForStudent($student_id, $program_id, $company_id){
+        global $wpdb;
+        $company_internship_student_program_review_table = COMPANY_PREFIX . "internship_student_program_review";
+        $selectExist = "SELECT * FROM ".$company_internship_student_program_review_table."
+                                                WHERE (".$company_internship_student_program_review_table.".student_id = \"".$student_id."\")
+                                                    AND (".$company_internship_student_program_review_table.".program_id = \"".$program_id."\")
+                                                    AND (".$company_internship_student_program_review_table.".company_id = \"".$company_id."\")
+                                                    ";
+        $result = $wpdb->get_results($selectExist, 'ARRAY_A');
+        $reviewData = '';
+        foreach($result as $r)
+            $reviewData = $r;
+        return $reviewData;
+    }
+
+    /**
+     * get business url
+     */
+    public function getBusinessUrl(){
+        global $wpdb;
+        $business_option_table = COMPANY_PREFIX.'options';
+        $sql = "SELECT option_value FROM ".$business_option_table."
+                                                WHERE (".$business_option_table.".option_name = \"siteurl\")";
+        $result = $wpdb->get_results($sql, 'ARRAY_A');
+        foreach($result as $r)
+            return $r['option_value'];
+    }
+}

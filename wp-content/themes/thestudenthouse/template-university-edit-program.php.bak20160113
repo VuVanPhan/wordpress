@@ -1,0 +1,283 @@
+<?php
+/*
+Template Name: Profile Settings
+*/
+?>
+<?php
+if(!get_current_user_id()){
+	wp_redirect(get_site_url().'/register');
+	return;
+}
+?>
+<?php
+	defined('BASE_PATH') || define('BASE_PATH', dirname(__FILE__) . '/');
+	require_once('init/functions/student/student.php');
+	require_once('init/functions/student/programInternship.php');
+	$student = new Student();
+	$programInternship = new ProgramIntenrship();
+	$statuses = $student->getProgramStatus();
+	if($_POST){
+		$data = $_POST;
+		$file = '';
+		if(isset( $_FILES['program_student']))
+			$file = $_FILES['program_student'];
+		$university->updateProgram($data,$file,BASE_PATH);
+	}
+	$program_id = $_GET['university-edit-program'];
+	$programData = $student->getProgramData($program_id);
+	//$students = $university->getStudentByProgramId($program_id);
+	$allCompanyInProgram = $programInternship->getAllCompanyInProgram($program_id);
+	$student_id = $user_id = get_current_user_id();
+	$companyStudentJoined = $programInternship->getCompanyStudentJoined($program_id);
+	$student_code = get_user_meta($student_id, 'student_code', true);
+	$studentInfo = $student->getStudentInforWithProgram($student_code, $program_id);
+?>
+<?php get_header(); ?>
+	<div class="user-profile">
+		<?php get_sidebar('profile-left'); ?>
+		<div class="column eightcol">
+			<form action="<?php echo themex_url(); ?>" class="formatted-form" method="post" enctype="multipart/form-data">
+				<input type="hidden" name="program_id" value="<?php echo $program_id; ?>" />
+				<div class="message">
+					<?php ThemexInterface::renderMessages(themex_value($_POST, 'success', false)); ?>
+				</div>
+				<div class="left"><h2><?php _e('Your internship program details', 'academy'); ?></h2></div>
+				<table class="">
+					<tbody>
+						<tr>
+							<th><?php _e('Program name','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $programData['name']; ?>
+								</div>
+							</td>
+						</tr>
+						<?php
+							$maxCourse = 0;
+							$year = date('Y');
+							// HUST
+							$maxCourse = $year - 1955;
+						?>
+						<tr>
+							<th><?php _e('Course','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $programData['course']; ?>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th><?php _e('Class','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $studentInfo['class']; ?>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th><?php _e('Hoc phan','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $studentInfo['hoc_phan']; ?>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							<th><?php _e('Requirement','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $programData['requirement']; ?>
+								</div>
+							</td>
+						</tr>
+
+						<!-- date -->
+						<tr>
+							<th><?php _e('Start date (dd/mm/YYYY)','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo date('d/m/Y', strtotime($programData['start_date'])) ?>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><?php _e('End date (dd/mm/YYYY)','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo date('d/m/Y', strtotime($programData['end_date'])) ?>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><?php _e('Status','academy'); ?><span class="span-required">*</span></th>
+							<td>
+								<div class="field-wrapper">
+									<?php echo $statuses[$programData['status']] ?>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+<!--				<button type="submit">--><?php //_e('Save Changes','academy'); ?><!--</button>-->
+<!--				<a href="#" class="element-button submit-button"><span class="button-icon save"></span>--><?php //_e('Save Changes','academy'); ?><!--</a>-->
+<!--				<input type="hidden" name="user_action" value="update_settings" />-->
+<!--				<input type="hidden" name="nonce" value="--><?php //echo wp_create_nonce(THEMEX_PREFIX.'nonce'); ?><!--" />-->
+			</form>
+
+			<div class="clear"></div>
+
+			<!-- company -->
+			<div class="left">
+				<h2>
+					<?php if($companyStudentJoined): ?>
+						<?php $reviewData = $programInternship->getReviewForStudent($student_id, $program_id, $companyStudentJoined['company_id']); ?>
+						<?php _e('You joined this company', 'academy'); ?>
+					<?php else: ?>
+						<?php _e('Company for this internship program', 'academy'); ?>
+					<?php endif ?>
+				</h2>
+			</div>
+			<div>
+				<table class="shop_table shop_table_responsive customer_details">
+					<thead>
+					<tr>
+						<?php if($companyStudentJoined): ?>
+							<th class="university-name"><?php _e( 'Name', 'academy' ); ?></th>
+							<th class="university-website"><?php _e( 'Website', 'academy' ); ?></th>
+							<th class="university-action"></th>
+							<th class="university-action"></th>
+						<?php else: ?>
+							<th class="university-id"><?php _e('#', 'academy'); ?></th>
+							<th class="university-name"><?php _e( 'Name', 'academy' ); ?></th>
+							<th class="university-website"><?php _e( 'Website', 'academy' ); ?></th>
+							<th class="university-action"><?php _e( 'Number of Students that can receive', 'academy' ); ?></th>
+							<th class="university-action"><?php _e( 'Number of Students received', 'academy' ); ?></th>
+							<th class="university-action"></th>
+							<th class="university-action"></th>
+						<?php endif ?>
+					</tr>
+					</thead>
+					<tbody>
+					<?php if($companyStudentJoined): ?>
+						<tr>
+							<td class="university-name"><?php echo $programInternship->getValueCompany($companyStudentJoined['company_id'],'company_name') ?></td>
+							<td class="university-website"><?php echo $programInternship->getValueCompany($companyStudentJoined['company_id'],'company_website') ?></td>
+							<?php if($reviewData): ?>
+								<td class="university-action reviewed_student">
+									<a href="" onclick="reviewStudent('<?php echo $student_id; ?>'); return false;"><?php _e('Review student', 'academy') ?></a>
+								</td>
+							<?php else: ?>
+								<td class="university-action">
+									<a class="element-button" href="" onclick="cancelJoinCompany('<?php echo $user_id; ?>', '<?php echo $companyStudentJoined['company_id']; ?>', '<?php echo $program_id; ?>', '<?php echo $student_code; ?>'); return false;"><?php _e('Cancel','academy'); ?></a>
+								</td>
+							<?php endif; ?>
+							<td class="university-action">
+								<a href="<?php echo get_site_url().'/?view-company='.$companyStudentJoined['company_id']; ?>"><?php _e('View', 'academy'); ?></a>
+							</td>
+						</tr>
+						<?php if($reviewData): ?>
+							<?php $businessUrl = $programInternship->getBusinessUrl(); ?>
+							<tr id="review_student_<?php echo $student_id; ?>" style="display: none;">
+								<td colspan="6">
+									<div style="with: 48%; float: left;">
+										<p><b><?php _e('Review from company', 'academy'); ?></b></p>
+										<div><?php echo $reviewData['review_content'] ?></div>
+										<div class="clear"></div>
+										<p><?php _e('Review file: ','academy').' '; ?><a href="<?php echo $businessUrl.'/'.$reviewData['review_file'] ?>"><?php _e('Download'); ?></a> </p>
+										<p><?php _e('Attendance file: ','academy').' '; ?><a href="<?php echo $businessUrl.'/'.$reviewData['attendance_file'] ?>"><?php _e('Download'); ?></a> </p>
+									</div>
+									<div style="with: 48%; float: right;">
+										<p><b><?php _e('Mark from lecturer', 'academy'); ?></b></p>
+										<p><b><?php echo $reviewData['mark_from_lecturer'] ?></b></p>
+									</div>
+								</td>
+							</tr>
+						<?php endif; ?>
+					<?php else: ?>
+						<?php if(!empty($allCompanyInProgram)): ?>
+							<?php $i = 0; ?>
+							<?php foreach($allCompanyInProgram as $companyIn): ?>
+								<?php $i++ ?>
+								<tr>
+									<td class="university-id"><?php echo $i ?></td>
+									<td class="university-name"><?php echo $programInternship->getValueCompany($companyIn['company_id'],'company_name') ?></td>
+									<td class="university-website"><?php echo $programInternship->getValueCompany($companyIn['company_id'],'company_website') ?></td>
+									<td class="university-action"><?php echo $companyIn['number_student']; ?></td>
+									<td class="university-action"><?php echo $companyIn['number_student_received']; ?></td>
+									<td class="university-action">
+										<?php if($companyJoined['number_student_received'] < $companyIn['number_student']): ?>
+											<a class="element-button" href="" onclick="joinCompany('<?php echo $user_id; ?>', '<?php echo $companyIn['company_id']; ?>', '<?php echo $program_id; ?>', '<?php echo $student_code; ?>'); return false;"><?php _e('Join','academy'); ?></a>
+										<?php else: ?>
+											<?php _e('Full', 'academy'); ?>
+										<?php endif ?>
+									</td>
+									<td class="university-action">
+										<a href="<?php echo get_site_url().'/?view-company='.$companyIn['company_id']; ?>"><?php _e('View', 'academy'); ?></a>
+									</td>
+								</tr>
+							<?php endforeach; ?>
+						<?php else: ?>
+							<tr>
+								<td colspan="7"><?php _e('You have not any university pending!', 'academy'); ?></td>
+							</tr>
+						<?php endif; ?>
+					<?php endif; ?>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+<?php get_footer(); ?>
+
+<script type="text/javascript">
+	//join to company
+	function joinCompany(student_id, company_id, program_id, student_code){
+		var r = confirm("<?php _e('Do you want to join this Company?', 'academy'); ?>");
+		if (r == true) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (xhttp.readyState == 4 && xhttp.status == 200) {
+					window.location.reload(true);
+				}
+			};
+			var url = '<?php echo get_stylesheet_directory_uri().'/controllers/student/joinProgramInternship.php'; ?>';
+			xhttp.open("POST", url, true);
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhttp.send("action_program=join_company&student_id=" + student_id + "&company_id=" + company_id + "&program_id=" + program_id + "&student_code=" + student_code);
+		}else{
+			return false;
+		}
+	}
+
+	//cancel joining to company
+	function cancelJoinCompany(student_id, company_id, program_id, student_code){
+		var r = confirm("<?php _e('Do you want to cancel joining this Company?', 'academy'); ?>");
+		if (r == true) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (xhttp.readyState == 4 && xhttp.status == 200) {
+					window.location.reload(true);
+				}
+			};
+			var url = '<?php echo get_stylesheet_directory_uri().'/controllers/student/joinProgramInternship.php'; ?>';
+			xhttp.open("POST", url, true);
+			xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+			xhttp.send("action_program=cancel_join_company&student_id=" + student_id + "&company_id=" + company_id + "&program_id=" + program_id + "&student_code=" + student_code);
+		}else{
+			return false;
+		}
+	}
+
+	//show review student from company
+	function reviewStudent(student_id){
+		var review_student_form = document.getElementById('review_student_'+student_id);
+		if(review_student_form.style.display == 'none'){
+			review_student_form.style.display = '';
+		}else{
+			review_student_form.style.display = 'none';
+		}
+	}
+</script>

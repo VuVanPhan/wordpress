@@ -1,0 +1,909 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.6\n"
+"Language: vi\n"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:132
+msgid "#"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register-old.php:40
+msgid "Business"
+msgstr "Công ty"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:153
+msgid "Cancel"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-view-company.php:52
+msgid "Company Address"
+msgstr "Địa chỉ công ty"
+
+#. Text in echo
+#: thestudenthouse/template-view-company.php:28
+msgid "Company Details"
+msgstr "Thông tin công ty"
+
+#. Text in echo
+#: thestudenthouse/template-view-company.php:36
+msgid "Company Name"
+msgstr "Tên công ty"
+
+#. Text in echo
+#: thestudenthouse/template-view-company.php:44
+msgid "Company Phone"
+msgstr "Điện thoại"
+
+#. Text in echo
+#: thestudenthouse/template-view-company.php:60
+msgid "Company Website"
+msgstr "Website"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:118
+msgid "Company for this internship program"
+msgstr "Công ty tham gia vào chương trình thực tập"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:31
+msgid "Company name"
+msgstr "Tên công ty"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:18
+msgid "Company profile"
+msgstr "Thông tin công ty"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:33
+#: thestudenthouse/template-university-edit-program.php:60
+#: thestudenthouse/template-profile.php:73 academy/template-statistics.php:21
+#: academy/template-statistics.php:70
+msgid "Course"
+msgstr "Khóa học"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:39 academy/module-course.php:13
+msgid "Description"
+msgstr "Miêu tả"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:229
+msgid "Do you want to cancel joining this Company?"
+msgstr "Bạn có muốn từ chối tham gia thực tập tại công ty này?"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:210
+msgid "Do you want to join this Company?"
+msgstr "Bạn có muốn tham gia thực tập vào công ty này?"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:35
+msgid "End date"
+msgstr "Ngày kết thúc"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:86
+msgid "End date (dd/mm/YYYY)"
+msgstr "Ngày kết thúc (ngày/tháng/năm)"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:70
+#: thestudenthouse/template-view-company.php:69
+msgid "Facebook"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:24 academy/template-profile.php:11
+msgid "First Name"
+msgstr "Tên"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:186
+msgid "Full"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:31
+msgid "ID"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:27
+msgid "Internship"
+msgstr "Thực tập"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:184
+msgid "Join"
+msgstr "Tham gia"
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:32 academy/template-profile.php:19
+msgid "Last Name"
+msgstr "Họ và Tên Đệm"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:90
+#: thestudenthouse/template-view-company.php:89
+#: academy/template-profile-links.php:50
+msgid "LinkedIn"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:39
+msgid "My Company"
+msgstr "Công ty của tôi"
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:24
+#: academy/sidebar-profile-left.php:22
+msgid "My Links"
+msgstr "Liên kết"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:32
+#: thestudenthouse/template-university-edit-program.php:133
+#: academy/framework/classes/widgets/themex.authors.php:89
+msgid "Name"
+msgstr "Tên"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:136
+msgid "Number of Students received"
+msgstr "Số sinh viên đã nhận"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:135
+msgid "Number of Students that can receive"
+msgstr "Số sinh viên có thể nhận"
+
+#. Text in echo
+#: thestudenthouse/template-register-old.php:34
+#: thestudenthouse/template-profile.php:40
+msgid "Phone"
+msgstr "Điện thoại"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:46
+msgid "Program name"
+msgstr "Tên chương trình"
+
+#. Text in echo
+#: thestudenthouse/template-register-old.php:7
+#: thestudenthouse/template-register-old.php:56 academy/header.php:93
+#: academy/template-register.php:9 academy/template-register.php:41
+#: academy/woocommerce/myaccount/form-login.php:12
+#: academy/woocommerce/myaccount/form-login.php:44
+msgid "Register"
+msgstr "Đăng Ký"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:68
+msgid "Requirement"
+msgstr "Yêu cầu"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:167
+msgid "Review file: "
+msgstr "File đánh giá"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:164
+msgid "Review from company"
+msgstr "Đánh giá từ công ty"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:149
+msgid "Review student"
+msgstr "Đánh giá sinh viên"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:103
+#: thestudenthouse/template-university-edit-program.php:104
+#: thestudenthouse/template-view-university.php:102
+#: thestudenthouse/template-view-university.php:103
+#: thestudenthouse/template-profile-company.php:45
+#: thestudenthouse/template-profile.php:144
+#: thestudenthouse/template-profile.php:145
+#: thestudenthouse/template-view-company.php:101
+#: thestudenthouse/template-view-company.php:102
+#: academy/framework/templates/index.php:19 academy/template-profile.php:49
+#: academy/template-profile-settings.php:51
+#: academy/template-profile-links.php:83
+msgid "Save Changes"
+msgstr "Lưu Thay Đổi"
+
+#. Text in echo
+#: thestudenthouse/template-register-old.php:79 academy/header.php:56
+#: academy/template-register.php:64
+#: academy/woocommerce/myaccount/form-login.php:67
+msgid "Sign in with Facebook"
+msgstr "Đăng Nhập Bằng Facebook"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:34
+msgid "Start date"
+msgstr "Ngày bắt đầu"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:78
+msgid "Start date (dd/mm/YYYY)"
+msgstr "Ngày bắt đầu (ngày/tháng/năm)"
+
+#. Text in echo
+#: thestudenthouse/template-register-old.php:45
+msgid "Student"
+msgstr "Sinh viên"
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:63
+msgid "Student Code"
+msgstr "Mã số sinh viên"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:80
+#: thestudenthouse/template-view-company.php:79
+#: academy/template-profile-links.php:26
+msgid "Twitter"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:113
+msgid "Type"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:48
+msgid "University"
+msgstr "Trường đại học"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:53
+msgid "University Address"
+msgstr "Địa chỉ trường đại học"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:29
+msgid "University Details"
+msgstr "Thông tin trường đại học"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:37
+msgid "University Name"
+msgstr "Tên trường"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:45
+msgid "University Phone"
+msgstr "Điện thoại trường"
+
+#. Text in echo
+#: thestudenthouse/template-view-university.php:61
+msgid "University Website"
+msgstr "Website"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:51
+#: thestudenthouse/template-university-edit-program.php:157
+#: thestudenthouse/template-university-edit-program.php:190
+msgid "View"
+msgstr "Xem"
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:59
+msgid "View University Information"
+msgstr "Xem thông tin trường đại học"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:134
+msgid "Website"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:56
+msgid "You have not any internship program!"
+msgstr "Bạn không có chương trình thực tập nào!"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:196
+msgid "You have not any university pending!"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:42
+msgid "Your internship program details"
+msgstr "Thông tin chương trình thực tập của bạn"
+
+#. Text in function
+#: academy/sidebar-profile-right.php:9
+msgid "\"%s\" subscription expires in %s."
+msgstr ""
+
+#. Text in function
+#: academy/sidebar-profile-right.php:9
+msgid "\"%s\" subscription is active."
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:164
+msgid "Active"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:97
+msgid "Active Courses"
+msgstr "Các Khóa Học Hiện Có"
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.authors.php:89
+msgid "Activity"
+msgstr ""
+
+#. Text in function
+#: academy/template-statistics.php:120
+msgid "All Courses"
+msgstr ""
+
+#. Text in function
+#: academy/template-statistics.php:120
+msgid "All Students"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:12 academy/template-statistics.php:45
+msgid "Answer"
+msgstr "Câu Trả Lời"
+
+#. Text in echo
+#: academy/module-attachments.php:3
+msgid "Attachments"
+msgstr "File Đính Kèm"
+
+#. Text in echo
+#: academy/sidebar-profile-right.php:27
+msgid "Author"
+msgstr "Tác Giả"
+
+#. Text in echo
+#: academy/template-statistics.php:99
+msgid "Average Grade"
+msgstr "Điểm Trung Bình"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:125
+msgid "Billing Address"
+msgstr "Địa Chỉ Thanh Toán"
+
+#. Text in echo
+#: academy/woocommerce/checkout/form-checkout.php:37
+msgid "Billing Details"
+msgstr "Thông Tin Hóa Đơn"
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.authors.php:1
+msgid "Blog Authors"
+msgstr "Tác Giả Blog"
+
+#. Text in echo
+#: academy/template-certificate.php:26
+msgid "Certificate not found"
+msgstr "Không Tìm Thấy Chứng Chỉ"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:28
+msgid "Close Lesson"
+msgstr ""
+
+#. Text in echo
+#: academy/comments.php:3
+msgid "Comments"
+msgstr "Bình luận"
+
+#. Text in function
+#: academy/single-lesson.php:19
+msgid "Complete \"%s\" lesson before taking this lesson."
+msgstr "Hoàn thành\"%\" bài học trước khi học bài này"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:12
+msgid "Complete Quiz"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:144
+msgid "Completed"
+msgstr "Đã Hoàn Thành"
+
+#. Text in echo
+#: academy/template-statistics.php:98
+msgid "Completed Courses"
+msgstr "Các Khóa Học Đã Hoàn Thành"
+
+#. Text in echo
+#: academy/template-profile-settings.php:34
+msgid "Confirm Password"
+msgstr "Xác Nhận Mật Khẩu"
+
+#. Text in echo
+#: academy/template-statistics.php:136
+msgid "Courses"
+msgstr "Các Khóa Học"
+
+#. Text in echo
+#: academy/template-profile-settings.php:42
+msgid "Current Password"
+msgstr "Mật Khẩu Hiện Tại"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:127
+msgid "Customer Address"
+msgstr "Địa Chỉ Thanh Toán"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:112
+msgid "Customer Details"
+msgstr "Thông Tinh Khách Hàng"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:143
+msgid "Customer Note"
+msgstr "Lưu Ý Từ Khách Hàng"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:21
+#: academy/framework/classes/widgets/themex.authors.php:89
+msgid "Date"
+msgstr "Ngày"
+
+#. Text in echo
+#: academy/header.php:78 academy/template-register.php:19
+#: academy/woocommerce/myaccount/form-login.php:22
+#: thestudenthouse/template-register-old.php:17
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: academy/template-profile-settings.php:18
+msgid "Email Address"
+msgstr "Email"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:115
+msgid "Email:"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:32
+msgid "Exit full screen"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:181
+msgid "Export"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:107
+msgid "Filter"
+msgstr "Lọc"
+
+#. Text in echo
+#: academy/template-profile-links.php:58
+msgid "Flickr"
+msgstr ""
+
+#. Text in echo
+#: academy/content-lesson.php:8
+msgid "Free"
+msgstr "Miễn Phí"
+
+#. Text in echo
+#: academy/module-player.php:31
+msgid "Full screen"
+msgstr ""
+
+#. Text in echo
+#: academy/template-profile-links.php:34
+msgid "Google"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:24 academy/template-statistics.php:73
+#: academy/template-statistics.php:169
+msgid "Grade"
+msgstr ""
+
+#. Text in echo
+#. Text in echo
+#: academy/woocommerce/checkout/form-checkout.php:47
+#: academy/template-statistics.php:23 academy/template-statistics.php:72
+msgid "Lesson"
+msgstr "Bài Học"
+
+#. Text in echo
+#: academy/module-lessons.php:3 academy/single-course.php:9
+msgid "Lessons"
+msgstr "Bài Học"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:16
+msgid "Mark Complete"
+msgstr "Số Điểm Đạt Được"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:6
+msgid "Mark Incomplete"
+msgstr "Số Điểm Chưa Đạt Được"
+
+#. Text in echo
+#: academy/module-player.php:39
+msgid "Mute"
+msgstr "Tắt Âm Thanh"
+
+#. Text in echo
+#: academy/sidebar-profile-left.php:26
+#: thestudenthouse/sidebar-profile-left.php:29
+msgid "My Orders"
+msgstr "Đơn Đặt Hàng"
+
+#. Text in echo
+#: academy/header.php:35 academy/sidebar-profile-left.php:20
+#: thestudenthouse/sidebar-profile-left.php:22
+msgid "My Profile"
+msgstr "Hồ Sơ"
+
+#. Text in echo
+#: academy/sidebar-profile-left.php:24
+#: thestudenthouse/sidebar-profile-left.php:26
+msgid "My Settings"
+msgstr "Cài Đặt"
+
+#. Text in echo
+#: academy/template-profile-settings.php:26
+msgid "New Password"
+msgstr "Mật Khẩu Mới"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:31
+msgid "Next Lesson"
+msgstr "Bài Học Tiếp Theo"
+
+#. Text in echo
+#: academy/sidebar-profile-right.php:19
+msgid "No courses yet."
+msgstr "Không Có Khóa Học Nào"
+
+#. Text in echo
+#: academy/woocommerce/myaccount/my-orders.php:19
+msgid "No orders yet."
+msgstr "Không Có Đơn Đặt Hàng Nào"
+
+#. Text in echo
+#: academy/template-posts.php:37
+msgid "No posts found. Try a different search?"
+msgstr "Không tìm thấy trang bạn cần. Xin hãy thử tìm kiếm lại!"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:15
+#: academy/framework/classes/widgets/themex.twitter.php:80
+#: academy/framework/classes/widgets/themex.authors.php:84
+msgid "Number"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/classes/widgets/themex.comments.php:67
+msgid "Number of comments to show"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:176
+msgid "Options"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/classes/widgets/themex.authors.php:88
+msgid "Order"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:154
+msgid "Order Note"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:49 academy/template-register.php:25
+#: academy/template-register.php:60
+#: academy/woocommerce/myaccount/form-login.php:28
+#: academy/woocommerce/myaccount/form-login.php:63
+#: thestudenthouse/template-register-old.php:23
+#: thestudenthouse/template-register-old.php:75
+msgid "Password"
+msgstr "Mật Khẩu"
+
+#. Text in echo
+#: academy/header.php:62
+msgid "Password Recovery"
+msgstr "Đặt Lại Mật Khẩu"
+
+#. Text in echo
+#: academy/module-player.php:18
+msgid "Pause"
+msgstr "Tạm Dừng"
+
+#. Text in echo
+#: academy/woocommerce/checkout/payment.php:12
+msgid "Payment Method"
+msgstr "Phương Thức Thanh Toán"
+
+#. Text in echo
+#: academy/template-statistics.php:149
+msgid "Per User"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:118
+msgid "Phone:"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:11 academy/module-player.php:17
+msgid "Play"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-lesson.php:34
+msgid "Previous Lesson"
+msgstr "Bài Học Trước"
+
+#. Text in echo
+#: academy/template-certificate.php:22
+msgid "Print Certificate"
+msgstr "In Chứng Chỉ"
+
+#. Text in echo
+#: academy/template-statistics.php:11 academy/template-statistics.php:44
+msgid "Question"
+msgstr "Câu Hỏi"
+
+#. Text in echo
+#: academy/single-course.php:24 academy/questions.php:6
+msgid "Questions"
+msgstr "Câu Hỏi"
+
+#. Text in echo
+#: academy/content-post.php:21
+msgid "Read More"
+msgstr "Đọc Thêm"
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.comments.php:1
+msgid "Recent Comments"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.twitter.php:1
+msgid "Recent Tweets"
+msgstr ""
+
+#. Text in echo
+#: academy/module-related.php:4
+msgid "Related Courses"
+msgstr "Các Khóa Học Tương Tự"
+
+#. Text in echo
+#: academy/template-register.php:30
+#: academy/woocommerce/myaccount/form-login.php:33
+#: thestudenthouse/template-register-old.php:28
+msgid "Repeat Password"
+msgstr "Nhập Lại Mật Khẩu"
+
+#. Text in echo
+#: academy/framework/templates/index.php:18
+msgid "Reset Options"
+msgstr ""
+
+#. Text in echo
+#: academy/header.php:81
+msgid "Reset Password"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/single-product/sale-flash.php:15
+#: academy/woocommerce/loop/sale-flash.php:15
+msgid "Sale"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.authors.php:1
+msgid "Selected blog authors"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:135
+msgid "Shipping Address"
+msgstr "Địa Chỉ Giao Hàng"
+
+#. Text in echo
+#: academy/header.php:40 academy/header.php:52 academy/template-register.php:52
+#: academy/template-register.php:62
+#: academy/woocommerce/myaccount/form-login.php:55
+#: academy/woocommerce/myaccount/form-login.php:65
+#: thestudenthouse/template-register-old.php:67
+#: thestudenthouse/template-register-old.php:77
+msgid "Sign In"
+msgstr "Đăng Nhập"
+
+#. Text in echo
+#: academy/header.php:30
+msgid "Sign Out"
+msgstr "Đăng Xuất"
+
+#. Text in echo
+#: academy/template-profile.php:28 thestudenthouse/template-profile.php:94
+msgid "Signature"
+msgstr "Chữ Kí"
+
+#. Text in echo
+#: academy/template-posts.php:38
+msgid "Sorry, no posts matched your search. Try again with some different keywords."
+msgstr "Xin lỗi, chúng tôi không tìm thấy bài viết bạn cần. Xin hãy thử lại bằng từ khóa khác."
+
+#. Text in echo
+#: academy/template-statistics.php:2
+msgid "Statistics"
+msgstr "Thống Kê"
+
+#. Text in echo
+#: academy/woocommerce/order/order-details.php:27
+#: thestudenthouse/template-university-internship.php:50
+#: thestudenthouse/template-university-internship.php:36
+#: thestudenthouse/template-university-edit-program.php:94
+msgid "Status"
+msgstr "Trạng Thái"
+
+#. Text in echo
+#: academy/module-users.php:3 academy/template-statistics.php:156
+msgid "Students"
+msgstr "Học Viên"
+
+#. Text in echo
+#: academy/content-plan.php:20 academy/module-form.php:7
+msgid "Subscribe Now"
+msgstr "Subscribe Ngay Bây Giờ!"
+
+#. Text in echo
+#: academy/single-course.php:35
+msgid "Subscribe to view this content"
+msgstr "Subscribe Để Xem"
+
+#. Text in echo
+#: academy/module-form.php:14 academy/module-form.php:17
+msgid "Take This Course"
+msgstr "Đăng Kí Khóa Học"
+
+#. Text in echo
+#: academy/sidebar-lesson.php:14
+msgid "Take a Quiz"
+msgstr "Kiểm Tra"
+
+#. Text in echo
+#: academy/single-course.php:37
+msgid "Take a course to view this content"
+msgstr "Hãy Đăng Kí Khóa Học Để Xem Nội Dung"
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.comments.php:1
+msgid "The most recent comments"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.twitter.php:1
+msgid "The most recent tweets"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/templates/index.php:4
+msgid "Theme Options"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/classes/widgets/themex.twitter.php:72
+#: academy/framework/classes/widgets/themex.authors.php:80
+#: academy/framework/classes/widgets/themex.comments.php:65
+msgid "Title"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:159
+msgid "Total"
+msgstr ""
+
+#. Text in echo
+#: academy/template-profile-links.php:42
+msgid "Tumblr"
+msgstr ""
+
+#. Text in echo
+#: academy/module-player.php:40
+msgid "Unmute"
+msgstr ""
+
+#. Text in echo
+#: academy/module-form.php:25
+msgid "Unsubscribe Now"
+msgstr "Unsubscribe"
+
+#. Text in echo
+#: academy/template-statistics.php:180
+msgid "Update"
+msgstr ""
+
+#. Text in echo
+#: academy/sidebar-profile-left.php:9
+#: thestudenthouse/sidebar-profile-left.php:11
+msgid "Upload"
+msgstr ""
+
+#. Text in echo
+#: academy/template-statistics.php:96 academy/template-statistics.php:67
+#: academy/header.php:46 academy/template-register.php:14
+#: academy/template-register.php:57
+#: academy/woocommerce/myaccount/form-login.php:17
+#: academy/woocommerce/myaccount/form-login.php:60
+#: thestudenthouse/template-register-old.php:12
+#: thestudenthouse/template-register-old.php:72
+msgid "Username"
+msgstr "Tên Đăng Nhập"
+
+#. Text in echo
+#: academy/module-form.php:29
+msgid "View Certificate"
+msgstr "Xem Chứng Chỉ"
+
+#. Text in echo
+#: academy/template-profile-links.php:74
+msgid "Vimeo"
+msgstr ""
+
+#. Text in echo
+#: academy/framework/classes/widgets/themex.twitter.php:76
+msgid "Widget ID"
+msgstr ""
+
+#. Text in echo
+#: academy/template-profile-links.php:66
+msgid "YouTube"
+msgstr ""
+
+#. Text in echo
+#: academy/content-post.php:29 academy/single.php:37
+msgid "by"
+msgstr ""
+
+#. Text in echo
+#: academy/single.php:37
+msgid "in"
+msgstr ""
+
+#. Text in function
+#: academy/framework/classes/widgets/themex.comments.php:1
+msgid "on"
+msgstr ""
+
+#. Text in echo
+#: academy/woocommerce/checkout/form-checkout.php:47
+msgid "terms &amp; conditions"
+msgstr "Điều Khoản Dịch Vụ"

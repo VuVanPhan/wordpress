@@ -1,0 +1,228 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Language: vi_VN\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#. Text in echo
+#: thestudenthouse/template-register.php:40
+msgid "Business"
+msgstr "Doanh nghiệp"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:31
+msgid "Company name"
+msgstr "Tên công ty"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:18
+msgid "Company profile"
+msgstr "Thông tin công ty"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:49
+#: thestudenthouse/template-university-internship.php:27
+msgid "Course"
+msgstr "Khóa học"
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:39
+msgid "Description"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:31
+msgid "Detail your internship program"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:17
+msgid "Email"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:29
+msgid "End date"
+msgstr "Ngày kết thúc"
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:75
+msgid "End date (dd/mm/YYYY)"
+msgstr "Ngày kết thúc (dd/mm/YYYY)"
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:24
+msgid "First Name"
+msgstr "Tên"
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:25
+msgid "ID"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:27
+msgid "Internship"
+msgstr "Thực tập"
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:32
+msgid "Last Name"
+msgstr "Họ"
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:39
+msgid "My Company"
+msgstr "Công ty"
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:24
+msgid "My Links"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:29
+msgid "My Orders"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:22
+msgid "My Profile"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:26
+msgid "My Settings"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:26
+msgid "Name"
+msgstr "Tên"
+
+#. Text in echo
+#: thestudenthouse/template-register.php:23
+#: thestudenthouse/template-register.php:75
+msgid "Password"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:34
+#: thestudenthouse/template-profile.php:40
+msgid "Phone"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:35
+msgid "Program name"
+msgstr "Tên chương trình"
+
+#. Text in echo
+#: thestudenthouse/template-register.php:7
+#: thestudenthouse/template-register.php:56
+msgid "Register"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:28
+msgid "Repeat Password"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:57
+msgid "Requirement"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile-company.php:45
+#: thestudenthouse/template-university-edit-program.php:92
+#: thestudenthouse/template-university-edit-program.php:93
+#: thestudenthouse/template-profile.php:123
+#: thestudenthouse/template-profile.php:124
+msgid "Save Changes"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:67
+#: thestudenthouse/template-register.php:77
+msgid "Sign In"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:79
+msgid "Sign in with Facebook"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:73
+msgid "Signature"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:28
+msgid "Start date"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:67
+msgid "Start date (dd/mm/YYYY)"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-edit-program.php:83
+#: thestudenthouse/template-university-internship.php:30
+msgid "Status"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:45
+msgid "Student"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:62
+msgid "Student Code"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:92
+msgid "Type"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-profile.php:48
+msgid "University"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/sidebar-profile-left.php:11
+msgid "Upload"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-register.php:12
+#: thestudenthouse/template-register.php:72
+msgid "Username"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:45
+msgid "View"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:50
+msgid "You have not any internship program!"
+msgstr ""
+
+#. Text in echo
+#: thestudenthouse/template-university-internship.php:44
+msgid "status"
+msgstr ""
